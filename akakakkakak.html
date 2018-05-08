@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<style>
+.mySlides
+{
+width:100%;
+height:100%;
+ opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+a
+{
+padding:5px;
+text-decoration:none;
+background-color:red;
+color:white;
+border-radius:5px;
+}
+
+footer
+{
+background-color:#ADD8E6;
+height:50px;
+text-align:center;
+}
+button
+{
+border-radius:5px;
+}
+header
+{
+background-color:#ADD8E6;
+height:170px;
+}
+
+.image1{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+}
+.image2 {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+
+}
+</style>
+
+
+<header>
+
+<h1><b>YourBid.Com</b></h1>
+<p><b>Sell And Buy Your Products </b></p>
+<p align="right">WELCOME GUEST</p>
+
+<div align="right">
+<a ALIGN="RIGHT" href="f40.html">Home</a>
+<a ALIGN="RIGHT" href="f10.html">ABOUT US</a>
+<a ALIGN="RIGHT" href="f17.html">BIDDER</a>
+<a ALIGN="RIGHT" href="f18.html">SELLER</a>
+<a ALIGN="RIGHT" href="f19.html">CONTACT US</a>
+<marquee  direction="right">Welcome To Live Auction</marquee>
+</div>
+</header>
+<body>
+
+
+<img class="mySlides" src="aksh.jpg">
+<img class="mySlides" src="aksh1.jpg">
+<img class="mySlides" src="aksh2.jpg">
+<img class="mySlides" src="aksh3.jpg">
+<img class="image2" src="aksh.jpg">
+<a  href="file1.html"><img class="image1" src="akak0.jpeg"><br/></a>
+<a  href="f40.html"><img class="image2"src="ak09.jpeg"><br/></a>
+
+
+<script>
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+
+
+<footer>
+</b>2016 Copyright YourBid All Rights Reserved &copy</b>
+</footer>
+</html> 
